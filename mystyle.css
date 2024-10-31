@@ -67,28 +67,31 @@ footer {
     gap: 10px;
 }
 
-@media (min-width: 640px) {
-    .container {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-@media (min-width: 640px) {
-    .container {
-        grid-template-columns: 1fr 1fr;
-    }
-}
 @media (min-width: 1024px) {
-    .container {
-        grid-template-columns: 1fr 1fr 1fr;
+    img {
+        max-width: 85%; 
     }
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+    img {
+        max-width: 95%; 
+    }
+}
+
 .container {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
  }
  img {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
     display: block;
 }
@@ -97,7 +100,7 @@ footer {
     height: auto;
 }
 img {
-    width: 100%;
+    width: 70%;
     height: auto;
     object-fit: cover; 
 }
