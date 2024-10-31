@@ -87,4 +87,17 @@ footer {
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
  }
- 
+ img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.main-content img, .sidebar img {
+    max-width: 100%;
+    height: auto;
+}
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
